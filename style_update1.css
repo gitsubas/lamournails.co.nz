@@ -1,0 +1,2407 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html {
+    font-family:'open sans', sans-serif;
+    font-size: 62.5%;
+    
+}
+body{
+    scroll-margin-top: 15rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#mobile_book_btn {
+    display: none;           
+}
+
+#nav_book {
+    display: none;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+    height: 10rem;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;  
+}
+.logo{
+    max-width: 20vw;
+    width:100%;
+    height: 100%;
+    padding: 0.2rem;
+    
+}
+
+.logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    width: 70rem;
+    height: 100%;
+    margin-right: 10rem;
+    margin-left: auto;     
+}
+
+nav ul li {
+  list-style: none;
+  width: 100%;
+  text-align: right;          
+}
+
+
+nav ul li a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    line-height: 2rem; 
+    padding-top: 7rem;   
+}
+
+nav ul li a:hover {
+    color: #ffc4cb50;
+}
+
+nav ul li a:active {
+    color: #ffc4cb;
+}
+
+figcaption{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: capitalize;  
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+    width: 100vw;
+    background-color:#ffc4cb50;
+}
+
+footer a:hover {
+    color: #ffc4cb;
+    
+}
+
+
+
+/* id CSS*/
+
+#testimony_header{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+    padding: 3.5rem 0;
+
+}
+#testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 100%;
+    background-color: #ffc4cb50 ;
+}
+
+
+/* global class CSS*/
+
+.hamburger {
+    display: none;
+    height: 8rem;
+    width: 5rem;
+    padding-top: 2.5rem;
+
+}
+
+.bar {
+    display: block;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.container{
+    height:10rem;
+    width: 100vw;
+}
+
+.banner{
+    height: 100vh;
+    width:100vw;
+    background-image: url(img/home-hero-image.jpeg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 22rem;
+    align-items: center; 
+}
+
+.banner-text{
+    text-align: center;
+    padding-top: 1rem;
+      
+}
+
+.banner-text h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10rem;
+    color: #ffc4cb;
+    text-shadow: black 0.2rem 0.2rem 1rem; 
+     
+}
+
+.banner-text p{
+    color: #ffc4cb;
+    font-size: 3rem;
+    text-shadow: black 0.2rem 0.2rem 1rem;
+        
+}
+
+.book{
+    width: 15rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 4.5rem;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem darkgray;
+    background-color: white;
+}
+
+.book a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color: #ffc4cb50;
+}
+
+button:active {
+    background-color: #ffc4cb;
+}
+
+
+.highlight-text{
+    height: 20rem;
+    width: 100vw;
+    text-align: center;
+    padding: 5rem 5rem;
+    margin:auto;   
+}
+
+.highlight-text p{
+    font-size: 3.5rem; 
+    text-transform: uppercase;
+    letter-spacing: 1rem;   
+}
+
+
+.nailroom-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40rem;
+    width: 100vw;
+    background-color:#ffc4cb50;
+    margin: auto;   
+}
+
+
+.nailroom-intro .box{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+.nailroom-intro .box p{
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    width: 80%;
+    height: 70%;
+}
+
+.nailroom-intro .room-photo{
+    height: 40rem;
+    width: auto;
+    object-fit:scale-down;
+    border-radius: 1rem;
+    margin-top: -10rem;
+    box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;
+}
+
+
+.service-intro{
+    height: 65rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffc4cb50;
+    text-align: center;
+    
+}
+
+
+.service-intro p{
+    font-size: 2.5rem;
+    padding: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    line-height: 10rem;
+}
+
+
+.introbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.service-photo{
+    margin:0 3rem;
+    height: 100%;
+    width: auto;
+   
+    }
+
+.service-photo img{
+    height: 100%;
+    width: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+    min-width: 30rem;
+    box-shadow: darkgray 0.4rem 0.4rem 0.4rem;    
+}
+
+.service-intro-1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 50rem;
+    width: 80vw;
+    background-color: #ffc4cb50 ;
+    margin:auto;
+}
+
+.nail-box{
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+}
+#intro_desc_box {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.nail-box img{
+    width: 80%;
+    min-width: 30rem;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -5rem;
+    border-radius: 2.5rem;
+    box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;
+}
+
+.nail-box p{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    
+}
+
+.testimonial-box{
+    width: 100%;
+    margin:0rem 5rem;
+    padding: 0rem 1rem; 
+    text-align: center;   
+}
+
+.testimonial-box h3{
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.testimonial-box p {
+    font-size: 1.6rem;
+}
+
+#testimony_footer {
+   width: 100vw;
+   height: 5rem;
+   background-color: #ffc4cb50;
+   text-align: center; 
+   
+}
+
+#testimony_footer p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+#testimony_footer p a {
+    border-bottom: 1px solid;  
+}
+
+
+.footer-box{
+    width: 100%;
+    height: 100%;
+    margin: auto 3rem;
+    padding: 2.5rem 1rem;
+    text-align: center;  
+}
+
+.footer-box p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+.footer-box h5{
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+}
+
+
+.footer-box a{
+    padding: 0rem 2rem;
+    color: black;
+    font-size: 3.5rem;
+    line-height: 5rem;
+    text-decoration: none;
+}
+
+.hours{
+   padding: 0rem;
+    
+}
+
+/*end of home page*/
+
+/*about-me page*/
+
+.page-heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 20rem;
+    }
+
+
+
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-color: #ffc4cb50;
+    height: 80rem;
+    width: 100vw;
+}
+
+
+
+.about-me-box{
+    width: 100%;
+    height:75rem;
+    position: relative;
+    margin: 5rem 0;
+    text-align: center;      
+}
+
+#about_photo_container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;   
+}
+
+.about-photo-box{
+    width: 80%;
+    height: 37.5rem;
+    padding: 5%;
+}
+
+.about-photo-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2.5rem;
+    object-fit: cover;
+    box-shadow: darkgrey 0.4rem 0.4rem 1rem;
+}
+
+#about_image_1{
+    margin: auto auto auto -5rem;
+}
+
+#about_image_2{
+    margin: auto -10rem auto 10rem;
+}
+
+
+.about-me-box p{
+    text-align: center;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;   
+}
+
+.about-me-box h4{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'dancing script', cursive;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 5rem;
+}
+
+.about-studio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#ffc4cb50;
+    border-radius: 2.5rem;
+}
+
+.box-heading{
+    width: 100vw;
+    height: 5rem;
+}
+
+.box-heading h2{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.about-studio .box{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.the-studio-image{
+    margin-top: -5rem;
+    width:80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5rem;
+    box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;   
+}
+
+.inside-box{
+    height: 80%;
+    width: 90%;
+    margin-top: 10%;
+}
+
+.about-studio p{
+    padding: auto 1rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+/*services page*/
+
+.service-page-heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 20rem;
+    
+}
+.services-heading{
+    position: relative;
+    height: 20rem;
+    width: 100vw;
+    padding-top: 15rem;   
+}
+.services-heading::before{
+    content: '';
+    background-image: url(img/Pages_baner.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100vw;
+    position:absolute;
+    opacity: 0.25;  
+}
+
+.service-catagory{
+    position: relative;
+    height: 15rem;
+    width: 100vw;
+    margin: 0rem auto;
+}
+
+.catagory-heading{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 15rem;
+    letter-spacing: 0.5rem; 
+    color: #ffc4cb; 
+    font-size: 6rem;
+    font-weight: 300; 
+}
+
+.service-catagory p{
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem auto;
+}
+
+.item-heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin:10rem auto 0 auto;
+}
+
+.service-book a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .service-book button:hover{
+    background-color: #ffc4cb;
+} */
+
+#gel_manicure, #soft_gel_extension, #builder_gel_overlay, #nail_art, #add_strength, #ibx, #removal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 0.5rem;
+    height: 40rem;
+    width: 100vw;
+    margin-top: 5rem;
+    background-color: #ffc4cb50;    
+}
+
+
+#gel_manicure_img, #soft_gel_extension_img, #builder_gel_overlay_img, #nail_art_img, #add_strength_img, #removal_img{
+    width: 40rem;
+    height: 100%;
+    text-align: center; 
+    
+}
+
+#ibx_img {
+    width: 21.8rem;
+    height: 95%;
+    text-align: center;
+}
+
+#gel_manicure_img img, #soft_gel_extension_img img, #builder_gel_overlay_img img, #nail_art_img img, #add_strength_img img, #removal_img img{
+    max-width: 40rem;
+    width: 80%;
+    height: 90%;
+    object-fit:cover;
+    border-radius: 2rem;
+    margin-top: -5rem;
+    box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;  
+    }
+
+#ibx_img img {
+    max-width: 40rem;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 2rem;
+    margin-top: -5rem;
+    box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;
+}
+
+#gel_manicure_desc, #soft_gel_extension_desc, #builder_gel_overlay_desc, #nail_art_desc, #add_strength_desc, #ibx_desc, #removal_desc{
+    max-width: 70rem;
+    width: 100%;
+    margin-left: 0rem;
+    padding: 5rem 3rem;
+    height: 100%;
+
+}
+
+#gel_manicure_desc p, #soft_gel_extension_desc p, #builder_gel_overlay_desc p, #nail_art_desc p, #add_strength_desc p, #ibx_desc p, #removal_desc p{
+    margin: auto 1rem;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 3rem;
+
+} 
+
+.service-book{
+    width: 100%;
+    height: 5rem;
+    margin-top: 5rem;
+    
+}
+
+.service-book button{
+    display: block;
+    margin: 0.5rem auto;
+    width:15rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: darkgray 0.2rem 0.2rem 0.6rem;
+
+}
+
+/*contact page*/
+
+
+
+.contactbox1{
+    height: 50rem;
+    width: 100vw;
+    background-color:#ffc4cb50;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-image{
+    width: 30%;
+    height: 80%;
+}
+
+.contact-image img{
+    width: 100%; height: 100%; margin-top: -10rem; border-radius: 2.5rem; object-fit: cover; box-shadow: darkgray 0.4rem 0.4rem 0.4rem;
+}
+
+.form{
+    width: 40%;
+    height: 100%;
+    padding-top: 5rem;
+}
+
+.form .cf{
+    display: grid;
+    grid-template-columns: (3 15rem);
+    grid-template-rows: 25rem 4rem;
+    gap: 2.5rem;
+    grid-template-areas: 
+    'left right right'
+    'submit right right';
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-family:'open sans', sans-serif;   
+}
+
+.left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+
+}
+
+.left input{
+    margin: 2rem auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2.5rem;  
+}
+
+.right{
+    grid-area: right;
+}
+
+.right textarea{
+    height:100%;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-family:'open sans', sans-serif;
+    border-radius: 2.5rem;   
+}
+
+#input-submit{
+    grid-area: submit;
+    border: none;
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 0.4rem grey;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    width: 12rem;
+    margin-left: 6rem;
+}
+
+.contactbox2{
+    background-color: #ffc4cb50;
+    height: 25rem;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;    
+}
+
+.contactbox2 div{
+    width: 100%;
+    height: 15rem;
+    margin: auto 3rem;   
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.column1 p{
+    text-align: center;
+    padding: 0rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.column1 a{
+  
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;  
+}
+
+.column2{
+text-align: right;
+
+    
+}
+
+.column2 p{
+    width:fit-content;
+    float: right;
+    margin-top: 15%;
+    margin-bottom: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem darkgray;
+    background-color: white;
+}
+
+/* price list page */
+
+.price-list{
+    width: 35%;
+    height: fit-content;
+    margin: 5rem auto auto auto;
+    box-shadow: darkgrey 0.3rem 0.3rem 0.5rem;
+    border-radius: 2.5rem;
+}
+
+.price-list img{
+    width: 100%;
+    height: auto;
+    border-radius: 2.5rem;    
+}
+
+/* terms and conditions page */
+
+.policies-heading {
+    position: relative;
+    height: 10rem;
+    width: 100vw;
+    padding-top: 20rem;
+}
+.policies-heading::before{
+    content: '';
+    background-image: url(img/Pages_baner.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 100vw;
+    position: absolute;
+    opacity: 0.25;  
+}
+
+.policies-page-heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 20rem;
+
+}
+
+.policies-text{
+    margin: 15rem 10vw;
+}
+
+.policies-text h1{
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.policies-text p{
+    line-height:3.5rem;
+    font-size: 2rem;
+}
+
+.policies-text ol{
+    padding-left: 3rem;
+    line-height:3.5rem;
+    font-size: 2rem;
+
+}
+
+
+.policies-text ol li{
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+/* Responsive design */
+
+
+
+
+
+
+
+
+
+/* smartphone */
+
+
+
+
+
+
+@media  (max-width: 688px) {
+    
+    
+
+    html{
+        font-size: 45%;
+    }
+
+
+    /* Home */
+
+    #mobile_book_btn {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 12rem;
+        margin-left: auto;
+                
+    }
+
+    #nav_book {
+        display: block;
+        height: 50%;
+        font-size: 1.3rem;      
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color:#f7e8ea;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 1rem 2.7rem rgba(0, 0, 0, 0.05);
+    }
+    nav{
+        height: 8rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        margin-right: 0rem;
+        padding-right: 7rem;
+    }
+
+    .nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    nav ul li a {
+        line-height: 10rem;
+        font-size: 1.8rem;
+        font-weight: 400;    
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .banner{
+        padding-top: 8rem;
+        height: 75rem;
+        background-image: url(img/home-hero-smartphone.png);
+        background-position: inherit;
+        background-attachment: inherit;
+    }
+
+    .banner-text{
+        padding-top: 15rem;
+    }
+
+
+    .banner-text p{
+        margin-bottom: 2.5rem;
+            
+    }
+    .book{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .highlight-text{
+        height: 15rem;
+    }
+    
+    .highlight-text p{
+        font-size: 2.5rem; 
+        letter-spacing: 0.7rem;   
+    }
+
+    .nailroom-intro{
+        flex-direction: column-reverse;
+        height: 60rem;
+    }
+    
+    .nailroom-intro .box p{ 
+        font-size: 1.8rem;
+        height: 100%;
+        margin-top: -10rem;
+    }
+    
+    .nailroom-intro .room-photo{  
+        margin-top: -5rem;
+        margin-bottom:auto;
+        width: 29rem;
+        height:25rem;
+        object-fit: cover;
+    }
+
+    .service-intro{
+        height: 135rem;
+    }
+    
+    .service-intro p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .introbox{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 135rem;  
+    }
+
+    .service-photo{
+        height: 40rem;
+        width: 100%;
+        /* border-radius: 1rem;
+        box-shadow: darkgrey 0.1rem 0.1rem 0.6rem;    */
+    }
+    
+    .service-photo img{
+        height: 75%;
+        width: 1.5rem;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+    }
+    figcaption{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .service-intro-1{
+        flex-direction: column;
+        height: 55rem;
+        width: 100vw;
+    }
+    
+    .nail-box{
+        width: 100%;
+        height: 100%;
+        min-height: 30rem;
+    }
+
+    .nail-box img{
+        margin-top: -2.5rem;
+        width: 35rem;
+    }
+    
+    #first_desc {
+        margin-top: -10rem;   
+    }
+    #testimony_header{
+        font-size: 2rem;
+        padding: 3.5rem 2rem;
+    }
+    #testimonials{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 75rem;
+
+    }
+    .testimonial-box{
+        width: 80%;
+    }
+    .testimonial-box p {
+        line-height: 3rem;
+    }
+    footer{
+        flex-direction: column;
+        height: 60rem;
+    }
+
+    .footer-box p {
+        font-size: 2rem;
+    }
+
+    .footer-box h5 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    
+    .footer-box p, h5{
+        line-height: 5rem;
+    } 
+
+    /* About */
+
+    .page-heading{
+        line-height: 4rem;
+        font-size: 2.5rem;
+        padding-top: 3.5rem;
+        }
+
+    #about-me{
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: #ffc4cb50;
+        height: 160rem;
+        width: 100vw;
+        margin-top: 10rem;
+    }
+    
+    /* #about-me:before{
+        height: 185rem;
+    } */
+    
+    .about-me-box{
+        height: 95rem;
+        margin: 5rem 0rem 0rem 0rem;
+        
+    }
+    
+    .about-photo-box{
+        min-width: 30rem;
+        max-width: 40rem;
+        width: 80%;
+    }
+    
+    .about-photo-box img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #about_image_1{
+        margin: auto;
+        margin-top:-2rem;   
+    }
+    
+    #about_image_2{
+        margin: auto;  
+    }
+    
+    .about-me-box p{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 0.1rem; 
+    }
+    
+    .about-studio{
+        flex-direction: column;
+        height: 65rem;
+        width: 100vw;
+    }
+    
+    .box-heading{
+        width: 100vw;
+        height: 5rem;
+        position: relative;
+        margin-top: 10rem;
+    }
+    
+    .box-heading h2{
+        letter-spacing: 0.5rem;
+        font-weight: 600;
+    }
+    
+    .about-studio .box{
+        margin-top: -5rem;
+    }
+    
+    .the-studio-image{
+        margin-top: 0;
+        width:30rem;
+        height: 30rem;
+    }
+    
+    .inside-box{
+        margin-top:0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inside-box p{
+        font-size: 1.7rem;
+    }
+
+    /*services page*/
+
+    .service-page-heading{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 10rem;
+        
+    }
+    .services-heading{
+        height: 10rem; 
+        padding-top: 8rem; 
+    }
+    .services-heading::before{
+        height: 10rem;
+    }
+
+    .service-catagory{
+        height: 10rem;
+        /* margin-top: -5rem; */
+        margin-bottom: 10rem;
+    }
+
+    .catagory-heading{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .service-catagory p{
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+        margin: 5rem auto;
+    }
+
+
+    .item-heading{
+        margin:2rem auto 0 auto;
+        font-size: 2rem;
+        font-weight: 300;
+       
+    } 
+
+    #gel_manicure {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 65rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #soft_gel_extension {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 65rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #removal {
+        flex-direction: column;
+        align-items: center;
+        padding:0.5rem;
+        height: 70rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #ibx{
+ 
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 50rem;
+        margin: -5rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+    }
+
+    #nail_art {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        margin: -5rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+        height: 40rem;
+    }
+
+    #add_strength {
+ 
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 45rem;
+        margin: -10rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+    }
+
+    #builder_gel_overlay {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        height: 80rem;
+        margin: -10rem auto 2.5rem auto;
+    }
+
+    #gel_manicure_img, #soft_gel_extension_img, #builder_gel_overlay_img, #nail_art_img, #add_strength_img, #removal_img{
+        width: 30rem;
+        height: 30rem;   
+    }
+
+    
+
+    #gel_manicure_img img, #soft_gel_extension_img img, #builder_gel_overlay_img img, #nail_art_img img, #add_strength_img img, #removal_img img{
+        max-width: 40rem;
+        height: 100%;
+    }
+
+    #ibx_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #gel_manicure_desc, #soft_gel_extension_desc, #builder_gel_overlay_desc, #add_strength_desc, #ibx_desc, #removal_desc{
+        max-width: 35rem;
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem 1rem;
+        height: fit-content;   
+    }
+    #nail_art_desc {
+        max-width: 30rem;
+        width: 100%;
+        margin: 0rem;
+        padding: 0 ;
+        height: 25rem;
+    }
+
+    #gel_manicure_desc p, #soft_gel_extension_desc p, #builder_gel_overlay_desc p, #nail_art_desc p, #add_strength_desc p, #ibx_desc p, #removal_desc p{
+        text-align: center;
+    } 
+
+    .service-book{
+        margin-top: 1rem;  
+    }
+
+    /* price-list page */
+
+    .price-list{
+        width: 95vw;
+        margin: 1rem auto auto auto;
+    }
+
+    /* contact page */
+
+    .contactbox1{
+        height: 100rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .contact-image{
+        width: 80%;
+        height: 40rem;
+    }
+    
+    .contact-image img{
+        margin-top: -5rem; 
+    }
+    
+    .form{
+        width: 95%;
+    }
+    
+    .form .cf{
+        display: grid;
+        grid-template-columns: 37.5rem;
+        grid-template-rows: 25rem 20rem 4rem;
+        gap: 1rem;
+        grid-template-areas: 
+        'left'
+        'right'
+        'submit';
+        justify-content: center;
+          
+    }
+    
+    .left {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; 
+    }
+    
+    .left input{
+        width: 80%;
+    }
+    
+    .right{
+        grid-area: right;
+    }
+    
+    #input-submit{
+        letter-spacing: 0.1rem;
+        margin:auto;
+    }
+    
+    .contactbox2{
+
+        height: 30rem;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;    
+    }
+    
+    .contactbox2 div{
+        margin: auto;   
+    }
+    
+    .column1{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column1 p{
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    
+    .column1 .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+    
+    .column2{
+    text-align: center;    
+    }
+    
+    .column2 p{
+        width:fit-content;
+        float: none;
+        margin: 5rem auto auto auto;
+        padding: auto;
+        font-size: 3rem;
+        text-transform: uppercase;
+        border: white solid 0.1rem;
+    }
+
+    /* t&C's page */
+
+    .policies-heading {  
+        height: 10rem;
+        padding-top: 8rem;
+    }
+    .policies-heading::before{
+        height: 10rem;
+    }
+    
+    .policies-page-heading {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-top: 1.5rem;
+    }
+    
+    .policies-text{
+        margin: 10rem 1.5rem;
+        text-align: center;
+    }
+    
+    .policies-text h1{
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;   
+    }
+    
+    .policies-text p{
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+    
+    .policies-text ol{
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    
+    .policies-text ol li{
+        padding-bottom: 2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* tablet */
+
+
+
+
+
+
+
+
+@media  (max-width: 992px) and (min-width: 689px) {
+
+    html {
+        font-size: 48.5%;
+    }
+
+    /* Home */
+    
+
+    #mobile_book_btn {
+        display:flex;
+        justify-content: center;
+        height: 100%;
+        width: 20rem;
+        margin-left: auto;
+                
+    }
+
+    #nav_book {
+        display: block;
+        height: 50%;
+        font-size: 1.8rem;      
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color:#f7e8ea;
+        width: 25%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 1rem 2.7rem rgba(0, 0, 0, 0.05);
+    }
+    nav{
+        height: 8rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        margin-right: 0rem;
+        padding-right: 7rem;
+    }
+
+    .nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    nav ul li a {
+        line-height: 15rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+           
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 3.5rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .banner{
+        padding-top: 20rem;
+        background-image: url(img/home-hero-image-tablet.jpg);
+        background-position: inherit;
+        background-attachment: inherit;
+    }
+    .banner-text p{
+        margin-bottom: 15rem;
+            
+    }
+    .book{
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .highlight-text{
+        height: 15rem; 
+    }
+    
+    .highlight-text p{
+        font-size: 2.5rem; 
+        letter-spacing: 0.7rem;   
+    }
+
+    .nailroom-intro{
+        flex-direction: column-reverse;
+        height: 80rem;
+    }
+    
+    .nailroom-intro .box p{ 
+        font-size: 2.4rem;
+        margin-top: -5rem;
+    }
+    
+    .nailroom-intro .room-photo{  
+        margin-top: -5rem;
+        width: auto;
+    }
+
+    .service-intro{
+        width: 65vw;
+        height: 145rem;
+    }
+    
+    .service-intro p{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .introbox{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 125rem; 
+        width: 90%;
+      
+    }
+
+    .service-photo{
+        height: 50rem;
+        width: 50%;
+        margin: 0.5rem;
+        border-radius: 1rem;
+        /* box-shadow: darkgrey 0.1rem 0.1rem 0.6rem; */
+      
+  
+    }
+    
+    .service-photo img{
+       height: 65%;
+       width:1.5rem; 
+        
+    }
+    figcaption{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .service-intro-1{
+        flex-direction: row;
+        height: 45rem;
+        width: 100vw;
+    }
+    
+    .nail-box{
+        width: 45rem;
+        height: 40rem;
+        min-height: 30rem;
+    }
+
+    .nail-box img{
+        margin-top: -7rem;
+    }
+    
+    #first_desc {
+        margin-top: -10rem;   
+    }
+    #testimony_header{
+        font-size: 2.5rem;
+        padding: 3.5rem 2rem;
+    }
+    #testimonials{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 75rem;
+
+    }
+    .testimonial-box{
+        width: 75%;
+    }
+    .testimonial-box p {
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+    footer{
+        flex-direction: row;
+        height: 30rem;
+    }
+    
+    .footer-box p {
+        line-height: 4.5rem;
+        font-size: 2rem;
+    } 
+
+    .footer-box h5 {
+        line-height: 4.5rem;
+        font-size: 2rem;
+        font-weight: 300;
+    } 
+
+    /* About */
+
+    .page-heading{
+        line-height: 6rem;
+        font-size: 2.5rem;
+        padding-top: 3.5rem;
+        }
+
+    #about-me{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        margin-top: 10rem;
+        height: 90rem;
+    }
+    
+    .about-me-box{
+        flex: 1 2;
+        margin: 0;
+        height: 90rem;
+        
+    }
+
+    #about_photo_container {
+        flex-direction: row;
+        height: 30rem; 
+    }
+    
+    .about-photo-box{
+        min-width: 30rem;
+        max-width: 40rem;
+        width: 80%;
+    }
+    
+    .about-photo-box img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #about_image_1, #about_image_2 {
+        margin: auto;
+        margin-top:-5rem;   
+    }
+    
+    .about-me-box p{
+        font-size: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 0.5rem; 
+    }
+    
+    .about-studio{
+        flex-direction: column;
+        height: 75rem;
+        width: 100vw;
+    }
+    
+    .box-heading{
+        width: 100vw;
+        height: 5rem;
+        position: relative;
+        margin-top: 10rem;
+    }
+    
+    .box-heading h2{
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+        font-weight: 300;
+    }
+    
+    .about-studio .box{
+        margin-top: 0;
+    }
+    
+    .the-studio-image{
+        margin-top: -5rem;
+        width:50rem;
+        height: 45rem;
+    }
+    
+    .inside-box{
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inside-box p{
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    /*services page*/
+
+    .service-page-heading{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 10rem;
+        
+    }
+    .services-heading{
+        height: 10rem; 
+        padding-top: 8rem; 
+    }
+    .services-heading::before{
+        height: 10rem;
+    }
+
+    .service-catagory{
+        height: 10rem;
+        margin-top: -5rem;
+        margin-bottom: 10rem;
+    }
+
+    .catagory-heading{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .service-catagory p{
+        font-size: 2rem;
+        padding: 1rem 2.5rem;
+    }
+
+
+    .item-heading{
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 2rem auto 0 auto;
+       
+    } 
+
+    #gel_manicure {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 45rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #soft_gel_extension {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 45rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #removal {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 50rem;
+        margin: -5rem auto 2.5rem auto;
+    }
+
+    #ibx{
+ 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 35rem;
+        margin: -5rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+    }
+
+    #nail_art {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        margin: -5rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+        height: 30rem;
+    }
+
+    #add_strength {
+ 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 30rem;
+        margin: -10rem auto 2.5rem auto;
+        background-color: #ffc4cb50;
+    }
+
+    #builder_gel_overlay {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        height: 58rem;
+        margin: -10rem auto 2.5rem auto;
+    }
+
+    #gel_manicure_img, #soft_gel_extension_img, #builder_gel_overlay_img, #nail_art_img, #add_strength_img, #removal_img{
+        width: 30rem;
+        height: 30rem;   
+    }
+
+    #gel_manicure_img img, #soft_gel_extension_img img, #builder_gel_overlay_img img, #nail_art_img img, #add_strength_img img, #removal_img img{
+        max-width: 40rem;
+        height: 100%;
+    }
+
+    #ibx_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #gel_manicure_desc, #soft_gel_extension_desc, #builder_gel_overlay_desc, #add_strength_desc, #ibx_desc, #removal_desc{
+        max-width: 48rem;
+        width: 100%;
+        margin: 0rem;
+        padding: 1rem 1rem;
+        height: fit-content;   
+    }
+    #nail_art_desc {
+        max-width: 30rem;
+        width: 100%;
+        margin: 0rem;
+        padding: 0 ;
+        height: 25rem;
+    }
+
+    #gel_manicure_desc p, #soft_gel_extension_desc p, #builder_gel_overlay_desc p, #nail_art_desc p, #add_strength_desc p, #ibx_desc p, #removal_desc p{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    } 
+
+    .service-book{
+        margin-top: 1rem;  
+    }
+
+    /* price-list page */
+
+    .price-list{
+        width: 60vw;
+        margin: 1rem auto auto auto;
+    }
+
+    /* contact page */
+
+    .contactbox1{
+        height: 100rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .contact-image{
+        width: 50%;
+        height: 70%;
+    }
+    
+    .contact-image img{
+        margin-top: -5rem; 
+    }
+    
+    .form{
+        width: 100%;
+    }
+    
+    .form .cf{
+        width: 90%;
+    }
+    
+    #input-submit{
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    .contactbox2{
+        height: 30rem;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;    
+    }
+    
+    .contactbox2 div{
+        margin: auto;   
+    }
+    
+    .column1{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column1 p{
+        text-align: center;
+        margin: auto;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .column1 a{
+        line-height: 3.5rem;
+        font-size: 4.5rem;
+        margin: auto 1.5rem;
+
+    }
+    
+    .column1 .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+    
+    .column2{
+    text-align: center;    
+    }
+    
+    .column2 p{
+        width:fit-content;
+        float: none;
+        margin: 5rem auto auto auto;
+        padding: auto;
+        font-size: 3rem;
+        text-transform: uppercase;
+        border: white solid 0.1rem;
+    }
+
+    /* t&C's page */
+
+    .policies-heading {  
+        height: 10rem;
+        padding-top: 8rem;
+    }
+    .policies-heading::before{
+        height: 10rem;
+    }
+    
+    .policies-page-heading {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .policies-text{
+        margin: 10rem 1.5rem;
+        
+    }
+    
+    .policies-text h1{
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+
+    }
+    
+    .policies-text p{
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+    
+    .policies-text ol{
+        font-size: 2rem;
+        
+    }
+    
+    .policies-text ol li{
+        padding-bottom: 2rem;
+    }
+    
+}
+
+
+
+/*  small screen desktop */
+
+
+@media  (max-width: 1312px) and (min-width: 993px) {
+
+    
+        
+    html {
+       
+        font-size: 57.5%;
+        
+    }
+
+    .nailroom-intro{
+        height: 45rem;
+    }
+    
+    .testimonial-box p {
+        line-height: 3rem;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+
+    footer {
+        height: 30rem;
+    }
+
+    .footer-box p {
+        line-height: 4.5rem;
+        font-size: 2rem;
+    } 
+
+    .footer-box h5 {
+        line-height: 4.5rem;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    /* about page */
+
+    .about-me-box {
+        height: 90rem;
+        padding-top: 5rem;
+    }    
+
+    .about-me-box p{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-size: 1.4rem;      
+    }
+
+    .box-heading h2{
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+
+    .about-studio {
+        width: 95vw;
+    }
+    .the-studio-image{
+        margin-top: -5rem;
+        width: 40rem;
+        height: 40rem;
+        object-fit: cover;
+        border-radius: 2.5rem;
+        box-shadow: darkgrey 0.4rem 0.4rem 0.4rem;   
+    }
+
+    /* services page */
+
+    #gel_manicure, #soft_gel_extension, #builder_gel_overlay, #nail_art, #add_strength, #ibx, #removal{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        padding: 0.5rem;
+        height: 35rem;
+        width: 100vw;
+        margin-top: 5rem;
+        background-color: #ffc4cb50;    
+    }
+
+    .item-heading{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin:10rem auto 0 auto;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+}
+
+/* widescreen desktop */
+
+
+
+
+@media  (min-width: 1312px) {
+
+
+    .testimonial-box p {
+        line-height: 3rem;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    footer {
+        height: 30rem;
+    }
+
+    .footer-box p {
+        line-height: 4.5rem;
+        font-size: 2rem;
+    } 
+
+    .footer-box h5 {
+        line-height: 4.5rem;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+   
+    /* About page */
+
+    .about-photo-box{
+        width: 100%;
+        height: 40rem;
+        padding: 0.5rem;
+    }
+
+    .about-photo-box img{
+        width: 35rem;
+        height: 100%;
+    }
+
+    #about_image_1{
+        margin: -5rem auto auto -10rem;
+    }
+
+    .about-me-box p{
+        text-align: center;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        font-size: 1.6rem;
+        line-height: 3rem;   
+    }
+
+    .box-heading{
+        margin-top: 10rem;
+    }
+
+   .box-heading h2{
+       font-size: 3.5rem;
+       font-weight: 300;
+   }
+
+    .the-studio-image{
+        width: 45rem; 
+    }
+
+    .about-studio p{
+        padding: auto 1rem;
+        line-height: 3.5rem;
+        font-size: 1.6rem;
+    }
+
+    /* Services Page */
+
+
+    .item-heading{
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    #gel_manicure_desc, #soft_gel_extension_desc, #builder_gel_overlay_desc, #nail_art_desc, #add_strength_desc, #ibx_desc, #removal_desc{
+        max-width: 75rem;
+        width: 100%;
+        margin-left: 0rem;
+        padding: 1rem 1rem;
+        height: 100%;
+    
+    }
+
+    #gel_manicure_desc p, #soft_gel_extension_desc p, #builder_gel_overlay_desc p, #nail_art_desc p, #add_strength_desc p, #ibx_desc p, #removal_desc p{
+        margin: auto 1rem;
+        font-size: 2rem;
+        text-align: left;
+        line-height: 3.5rem;
+    
+    }
+
+    
+    /*contact page*/
+
+
+
+    .contactbox1{
+        margin-top: 20rem;
+    }
+
+    .contact-image{
+        width: 45rem;
+        height: 50rem;
+    }
+
+    .contact-image img{
+        margin-top: -5rem; 
+    }
+    .column1 p{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .column2 p{
+        font-weight: 300;   
+    }
+
+    /* price list page */
+
+    .price-list{
+        width: 25%;
+    }
+    /* terms and conditions page */
+
+    .policies-text{
+        margin: 20rem 10vw;
+    }   
+}
+
+
+
